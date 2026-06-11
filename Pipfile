@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"          # 임베딩·답변 생성
+chromadb = "*"        # 벡터 DB
+pypdf = "*"           # PDF 텍스트 추출
+python-dotenv = "*"   # .env 에서 API 키 읽기
+ipykernel = "*"       # 이 가상환경을 주피터 커널로 등록
+
+[dev-packages]
+
+# [requires] 의 python_version 은 "정확히 그 버전"을 찾으므로 일부러 비워 둔다.
+# 그러면 pipenv 가 지금 활성화된 python 을 그대로 쓴다. (3.10 이상이면 OK, 3.14 동작 확인)

@@ -1,0 +1,20 @@
+# 비밀키
+.env
+
+# 파이썬
+.venv/
+__pycache__/
+*.pyc
+
+# 벡터 DB (인덱싱 결과물 — 코드 실행하면 다시 생긴다)
+chroma_db/
+
+# 주피터
+.ipynb_checkpoints/
+
+# 에디터 (VS Code / Cursor / JetBrains)
+.vscode/
+.idea/
+
+# OS
+.DS_Store
