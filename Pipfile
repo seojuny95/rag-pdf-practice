@@ -6,9 +6,17 @@ name = "pypi"
 [packages]
 openai = "*"          # 임베딩·답변 생성
 chromadb = "*"        # 벡터 DB
-pypdf = "*"           # PDF 텍스트 추출
+pypdf = "*"           # PDF 텍스트 추출 (rag_pdf 기본 실습용)
+pymupdf4llm = "*"     # PDF → Markdown (표를 행·열 살려 뽑는다, advanced 실습용)
 python-dotenv = "*"   # .env 에서 API 키 읽기
 ipykernel = "*"       # 이 가상환경을 주피터 커널로 등록
+
+# ── 고도화 실습(advanced_rag.ipynb)의 추가 라이브러리 ──
+# rank-bm25 · kiwipiepy · sentence-transformers · langchain(>=0.3,<1.0) · langchain-community(>=0.3,<0.4) ·
+# langchain-openai · langchain-chroma · langchain-text-splitters · langchain-google-vertexai · ragas(==0.2.15)
+# 이들은 무겁고(torch 등) 버전이 까다로워(langchain 은 1.x 가 아니라 0.3 으로 고정해야 ragas·retriever 와 맞물린다)
+# base 환경에 두지 않는다. advanced_rag.ipynb 맨 위 '라이브러리 설치' 셀이 위 버전으로 한 번에 깐다.
+# (그러면 기본 rag_pdf 환경은 가볍게 유지된다.)
 
 [dev-packages]
 

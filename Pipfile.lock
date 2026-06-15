@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "072f44dee11c0acbc34a72a48378daeb36fe79bbdafc6ac040a60cf049ab891a"
+            "sha256": "80589f6e4a86aab30b09709875d55259ff011640ab409622a0823ee2d095bf2f"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -521,11 +521,11 @@
         },
         "filelock": {
             "hashes": [
-                "sha256:7fc1b3f39cf172fd8203812043c57b8a65aef9969f38b6704f628b881f761a84",
-                "sha256:e58333029cc9b925f39aad59b1d8f0a1ad836af4e60d7217f4a4dba87461261d"
+                "sha256:10cdb3656fc44541cdf30652a93fb10ec6b05325620eb316bd26893e4201538a",
+                "sha256:dac1648087d5115554850d113e7dd8c83ab2d38e3435dde2d4f163847e57b767"
             ],
             "markers": "python_version >= '3.10'",
-            "version": "==3.29.3"
+            "version": "==3.29.4"
         },
         "flatbuffers": {
             "hashes": [
@@ -1361,6 +1361,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==1.7.2"
+        },
+        "networkx": {
+            "hashes": [
+                "sha256:26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509",
+                "sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762"
+            ],
+            "markers": "python_version >= '3.11' and python_full_version != '3.14.1'",
+            "version": "==3.6.1"
         },
         "numpy": {
             "hashes": [
@@ -2218,6 +2226,41 @@
             "markers": "python_version >= '3.9'",
             "version": "==2.20.0"
         },
+        "pymupdf": {
+            "hashes": [
+                "sha256:1dd460a3ae4597a755f00a3bd9771f5ebf1531dc111f6a36bf05dd00a6b84425",
+                "sha256:580983849c64a08d08344ca3d1580e87c01f046a8392421797bc850efd72a5b6",
+                "sha256:660d93cb6da5bbddf11d3982ae27745dd3a9902d9f24cdb69adab83962294b5a",
+                "sha256:77691604c5d1d0233827139bbcdea61fd57879c84712b8e49b1f45520f7ab9c2",
+                "sha256:7a92faa25129e8bbec5e50eeb9214f187665428c31b05c4ef6e36c58c0b1c6d2",
+                "sha256:857842b4888827bd6155a1131341b2822a7ebe9a8c15a975fd7d490d7a64a30c",
+                "sha256:a5c1088a87189891a4946ab314a14b7934ac4c5b6077f7e74ebee956f8906d0e",
+                "sha256:d20f68ef15195e073071dbc4ae7455257c7889af7584e39df490c0a92728526e",
+                "sha256:fc1bc3cae6e9e150b0dbb0a9221bdfd411d65f0db2fe359eaa22467d7cc2a05f"
+            ],
+            "markers": "python_version >= '3.10'",
+            "version": "==1.27.2.3"
+        },
+        "pymupdf-layout": {
+            "hashes": [
+                "sha256:303b9414216dfaf711ec7d807b6f1e4c3e0a92bbb4569340fcedd9d5593d16ca",
+                "sha256:503b64d9b6b31ea3af79ef85cf7d36950c5048af468cb297684d2953553c62ad",
+                "sha256:5656b09669dcd7c51f539afb6fdaf853602bab4cbc20479ee5ee1a85a4e32b60",
+                "sha256:75c2ab3c0e8830ac2bc50cfd32d375a30768a2610dac72a02f08265336e0834f",
+                "sha256:fcf03aa815cbceebdb3263dd6a190de4547c46b1d168928836ec38738afe127d"
+            ],
+            "markers": "python_version >= '3.10'",
+            "version": "==1.27.2.3"
+        },
+        "pymupdf4llm": {
+            "hashes": [
+                "sha256:42ec1a47ddc62be3f4f40c116d27618611c6f9fa366719016d9ddc3f3a3dc22b",
+                "sha256:bd724b79fa3f06a5b28d7a65f7acfa8de56e04bdb603ac2d6dff315e0d151aaa"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==1.27.2.3"
+        },
         "pypdf": {
             "hashes": [
                 "sha256:5a96a17dbdfbf9c2ab24c0a13fa0aba182be22ba6f283098712c16fc242f509f",
@@ -2634,6 +2677,14 @@
                 "sha256:d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695"
             ],
             "version": "==0.6.3"
+        },
+        "tabulate": {
+            "hashes": [
+                "sha256:e2cfde8f79420f6deeffdeda9aaec3b6bc5abce947655d17ac662b126e48a60d",
+                "sha256:f0b0622e567335c8fabaaa659f1b33bcb6ddfe2e496071b743aa113f8774f2d3"
+            ],
+            "markers": "python_version >= '3.10'",
+            "version": "==0.10.0"
         },
         "tenacity": {
             "hashes": [
