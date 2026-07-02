@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"          # embeddings and answer generation
+chromadb = "*"        # vector DB
+pypdf = "*"           # PDF text extraction (for the basic rag_pdf exercise)
+pymupdf4llm = "*"     # PDF → Markdown (extracts tables with rows/cols intact, for the advanced exercise)
+python-dotenv = "*"   # read the API key from .env
+ipykernel = "*"       # register this virtualenv as a Jupyter kernel
+
+# ── Extra libraries for the advanced exercise (advanced_rag.ipynb) ──
+# rank-bm25 · kiwipiepy · sentence-transformers · langchain(>=0.3,<1.0) · langchain-community(>=0.3,<0.4) ·
+# langchain-openai · langchain-chroma · langchain-text-splitters · langchain-google-vertexai · ragas(==0.2.15)
+# These are heavy (torch, etc.) and version-sensitive (langchain must be pinned to 0.3, not 1.x, to mesh with ragas/retriever),
+# so they're kept out of the base environment. advanced_rag.ipynb's top 'Install libraries' cell installs the above in one go.
+# (This keeps the basic rag_pdf environment light.)
+
+[dev-packages]
+
+# python_version in [requires] looks for "exactly that version", so we deliberately leave it empty.
+# Then pipenv uses the currently active python as-is. (3.10+ is OK, verified on 3.14)

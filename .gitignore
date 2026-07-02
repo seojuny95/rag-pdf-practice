@@ -1,0 +1,20 @@
+# Secret keys
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Vector DB (indexing output — recreated when you run the code)
+chroma_db/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors (VS Code / Cursor / JetBrains)
+.vscode/
+.idea/
+
+# OS
+.DS_Store
